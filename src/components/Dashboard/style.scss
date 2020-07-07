@@ -1,0 +1,79 @@
+.exchange-content {
+  position: absolute;
+  top: 73px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: $block-padding;
+
+  @media screen and (max-width: 992px) {
+    display: block;
+    overflow-y: auto;
+    top: 150px;
+  }
+
+  & > div {
+    width: 30%;
+    padding-right: 4px;
+
+    @media screen and (max-width: 992px) {
+      width: 100% !important;
+      padding-right: 0;
+      padding-bottom: 8px;
+    }
+  }
+
+  & > div:first-child {
+    width: 23%;
+  }
+
+  & > div:nth-child(2) {
+    flex-grow: 1;
+  }
+
+  & > div:nth-child(3) {
+    width: 23%;
+  }
+
+  & > div:last-child {
+    padding-right: 0;
+    min-width: 240px;
+  }
+
+  .vertical-split {
+    display: flex;
+    flex-direction: column;
+
+    &:first-child {
+      position: relative;
+      & > div:first-child {
+        height: 180px;
+      }
+      & > div:last-child {
+        height: calc(100% - 180px);
+      }
+    }
+
+    & > div:first-child {
+      height: 60%;
+      margin-bottom: 4px;
+    }
+
+    & > div:last-child {
+      height: 40%;
+    }
+  }
+
+  .vertical-split.desktop {
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
+  }
+}

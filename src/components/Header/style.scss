@@ -1,0 +1,75 @@
+.navbar {
+  .navbar-toggler {
+    font-size: 1rem;
+    outline: 0;
+    padding: 0.25rem 0.75rem;
+
+    span {
+      background-color: $white;
+      border-radius: 5px;
+    }
+  }
+
+  .navbar-collapse {
+    justify-content: flex-end;
+
+    .navbar-nav {
+      display: flex;
+
+      &.navbar-right {
+        li {
+          display: flex;
+          align-items: center;
+          font-size: 16px;
+
+          @media screen and (max-width: 992px) {
+            display: block;
+            padding-right: 0;
+            padding-left: 0;
+          }
+
+          .no-account {
+            color: #b1363f;
+          }
+
+          .block-item {
+            display: block;
+            cursor: pointer;
+          }
+          i {
+            color: $active-color;
+            margin-right: 0.5rem;
+            &.warning {
+              color: $warning-color;
+              position: relative;
+            }
+
+            &.fa-check-circle {
+              color: #02a177;
+            }
+
+            &.fa-sign-out-alt {
+              color: #b1363f;
+              margin-left: 5px;
+            }
+
+            &::after {
+              display: none;
+            }
+          }
+          &.nav-item:hover {
+            cursor: pointer;
+            color: $active-color;
+          }
+          .nav-link {
+            color: $white;
+            &:hover {
+              cursor: pointer;
+              color: $active-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

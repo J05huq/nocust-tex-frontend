@@ -1,0 +1,22 @@
+.introduction-content {
+  .button-group {
+    margin-top: 50px!important;
+
+    .button-container:last-child {
+      margin-left: auto;
+    }
+  }
+
+  .introduction-centered-div {
+    margin: 0 100px;
+
+    .introduction-picture {
+      text-align: center;
+      margin: 1rem;
+
+      img {
+        height: 100px;
+      }
+    }
+  }
+}

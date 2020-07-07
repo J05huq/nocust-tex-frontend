@@ -1,0 +1,124 @@
+{
+  "name": "tex",
+  "version": "0.3.0",
+  "private": true,
+  "homepage": "https://tex.liquidity.network/",
+  "dependencies": {
+    "@amcharts/amcharts4": "4.5.4",
+    "@hapi/joi": "15.1.0",
+    "@sentry/browser": "5.6.3",
+    "axios": "0.19.0",
+    "bcryptjs": "2.4.3",
+    "bignumber.js": "9.0.0",
+    "bip39": "2.5.0",
+    "charting_library": "git+https://0623970f9f1bc33de645b16caa334813461d6ce6:x-oauth-basic@github.com/tradingview/charting_library.git",
+    "date-fns": "1.30.1",
+    "deepmerge": "4.0.0",
+    "ethereumjs-wallet": "0.6.3",
+    "formik": "1.5.8",
+    "i18next": "15.1.1",
+    "immer": "3.1.3",
+    "is-plain-object": "3.0.0",
+    "liquidity-invoice-generation": "3.0.0",
+    "lodash": "4.17.15",
+    "nocust-client": "4.0.3",
+    "qrcode.react": "0.9.3",
+    "react": "16.8.6",
+    "react-copy-to-clipboard": "5.0.1",
+    "react-dom": "16.8.6",
+    "react-i18next": "10.12.2",
+    "react-password-strength": "2.4.0",
+    "react-redux": "5.1.1",
+    "react-router": "5.0.1",
+    "react-router-dom": "5.0.1",
+    "react-spinners": "0.5.13",
+    "react-toastify": "5.3.2",
+    "react-transition-group": "2.5.3",
+    "react-web-tabs": "1.0.1",
+    "reactstrap": "6.5.0",
+    "redux": "4.0.4",
+    "redux-thunk": "2.3.0",
+    "styled-components": "4.3.2",
+    "styled-normalize": "8.0.6",
+    "web3": "1.2.4",
+    "yup": "0.27.0",
+    "zxcvbn": "4.4.2"
+  },
+  "devDependencies": {
+    "@babel/core": "7.5.5",
+    "@storybook/addon-actions": "5.1.9",
+    "@storybook/addon-knobs": "5.1.9",
+    "@storybook/addon-links": "5.1.9",
+    "@storybook/addons": "5.1.9",
+    "@storybook/react": "5.1.9",
+    "@types/bip39": "2.4.2",
+    "@types/jest": "24.0.15",
+    "@types/lodash": "4.14.136",
+    "@types/node": "12.6.8",
+    "@types/react": "16.8.23",
+    "@types/react-dom": "16.8.5",
+    "@types/react-i18next": "8.1.0",
+    "@types/react-redux": "7.1.1",
+    "@types/react-router": "5.0.3",
+    "@types/react-router-dom": "4.3.4",
+    "@types/reactstrap": "6.4.4",
+    "@types/styled-components": "4.1.18",
+    "@types/zxcvbn": "4.4.0",
+    "babel-loader": "8.0.6",
+    "cypress": "3.4.1",
+    "cypress-wait-until": "1.2.3",
+    "eslint-plugin-cypress": "2.6.1",
+    "gh-pages": "2.0.1",
+    "husky": "3.0.2",
+    "lint-staged": "9.2.1",
+    "node-sass": "4.12.0",
+    "prettier": "1.18.2",
+    "react-scripts": "3.0.1",
+    "typescript": "3.5.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build -m \"[Frontend] Deploy\"",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "e2e": "npx cypress open"
+  },
+  "eslintConfig": {
+    "extends": "react-app",
+    "plugins": [
+      "cypress"
+    ],
+    "env": {
+      "cypress/globals": true
+    },
+    "rules": {
+      "no-unused-expressions": 0
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

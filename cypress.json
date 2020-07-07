@@ -1,0 +1,11 @@
+{
+  "env": {
+    "HOST": "http://localhost:3000/exchange/trade/fLQD-fETH",
+    "WALLET_ADDRESS": "0xf88BF10Bc0C3c2181B4DE53bF351fdB8b586991A",
+    "WALLET_ADDRESS_B": "0x1F3424027d55b1861863eb3b247D669db26DA91F",
+    "WALLET_ADDRESS_WITHOUT_PASSWORD": "0xd539504449cf02ae95e198a0cff39ad7c5e6c9bf",
+    "PRIVATE_KEY": "0x63320cb30cd7764fc6c17f813a23011b53f3e80eb298d25a10191f3d79a3bc86",
+    "DUMMY_PASSWORD": "Asd123++P@ss",
+    "SEED_PHRASE": "capital bone network broom swing artist cloud girl viable fury dentist find"
+  }
+}

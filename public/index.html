@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#193b6c" />
+    <meta
+      name="description"
+      content="Trustless Exchange: Instant trades, Public Orderbook or Peer-to-Peer OTC, doesn't hold your funds."
+    />
+    <!-- social sharing metadata -->
+    <meta
+      property="og:title"
+      content="TEX &#x2666; Trustless Exchange: Instant trades, Public Orderbook or Peer-to-Peer OTC, doesn't hold your funds."
+    />
+    <meta
+      property="og:description"
+      content="Trustless Exchange: Instant trades, Public Orderbook or Peer-to-Peer OTC, doesn't hold your funds."
+    />
+    <meta
+      property="og:image"
+      content="http://liquidity.network/assets/media/img/liquidity-network-logo.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="682" />
+    <meta property="og:image:height" content="384" />
+    <meta
+      property="og:image:alt"
+      content="Trustless Exchange: Instant trades, Public Orderbook or Peer-to-Peer OTC, doesn't hold your funds."
+    />
+    <meta property="og:url" content="https://tex.liquidity.network/" />
+    <meta property="og:type" content="website" />
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.png" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>TEX - Trustless Exchange, powered by Liquidity Network</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script src="%PUBLIC_URL%/datafeeds/udf/dist/polyfills.js"></script>
+		<script src="%PUBLIC_URL%/datafeeds/udf/dist/bundle.js"></script>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <!--    <iframe style="display:none" height="0" width="0" frameBorder="0" id="superFrameStory" src="https://liquidity-network.github.io/in-browser-library/frame.html"></iframe>-->
+    <!--<iframe style="display:none" height="0" width="0" frameBorder="0" id="superFrameStory" src="http://localhost:8080/frame.html"></iframe>-->
+    <div id="root"></div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <script>
+      window.addEventListener('load', () => {
+        if (navigator.doNotTrack !== '1') {
+          const ga = document.createElement('script');
+          ga.setAttribute('async', 'async');
+          ga.setAttribute(
+            'src',
+            'https://www.googletagmanager.com/gtag/js?id=AW-'
+          );
+
+          const triggerGa = document.createElement('script');
+          triggerGa.innerHTML = `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'AW-806467021');function gtag_report_conversion(url) {var callback = function () {if (typeof(url) != 'undefined') {window.location = url;}};gtag('event','conversion',{'send_to': 'AW-806467021/k2K1CPmW04MBEM3rxoAD','value': 5.0,'event_callback': callback});return false;}`;
+
+          document.head.appendChild(ga);
+          document.body.appendChild(triggerGa);
+        }
+      });
+    </script>
+  </body>
+</html>

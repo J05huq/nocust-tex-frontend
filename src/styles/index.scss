@@ -1,0 +1,100 @@
+// password checking
+@import '~react-password-strength/dist/style.css';
+
+//import colors
+@import './common/colors.scss';
+//import variables
+@import './common/variables.scss';
+//import fonts
+@import './common/fonts.scss';
+//components style
+@import '../components/Header/style.scss';
+@import '../components/Header/AccountManager/CreateWallet/style.scss';
+@import '../components/Header/AccountManager/ImportWallet/style.scss';
+@import '../components/Header/TutorialScreen/style.scss';
+@import '../components/Dashboard/style.scss';
+@import '../ui/Block/style.scss';
+@import '../components/Common/Select/style.scss';
+@import '../components/Balance/style.scss';
+@import '../components/Balance/Form/style.scss';
+@import '../components/Order/style.scss';
+@import '../components/OrderBook/style.scss';
+@import '../components/OrderBook/OrderBookChart/style.scss';
+@import '../components/Transaction/style.scss';
+
+body {
+  .tabs-header {
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(to right, $left-gradient-color, $right-gradient-color);
+    border-image-slice: 1;
+
+    button {
+      color: $text-color;
+    }
+  }
+
+  form {
+    .input-container {
+      .input-group {
+        input {
+          background-color: $body-background;
+          border: 1px solid $input-border;
+          border-right: none;
+          color: $text-color;
+        }
+        p {
+          background-color: $body-background;
+          border: 1px solid $input-border;
+          border-left: none;
+          color: $th-text;
+        }
+      }
+    }
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+  border-radius: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1e1a3a;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #9c62e7;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #8b57ce;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-animation: autofill 0s forwards;
+  animation: autofill 0s forwards;
+  -webkit-text-fill-color: #fff;
+}
+
+@keyframes autofill {
+  100% {
+    background: transparent;
+    color: inherit;
+  }
+}
+
+@-webkit-keyframes autofill {
+  100% {
+    background: transparent;
+    color: inherit;
+  }
+}

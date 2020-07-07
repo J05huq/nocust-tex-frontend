@@ -1,0 +1,23 @@
+.import-wallet-relation-content {
+  margin-top: 30px;
+  .step-0 {
+    .ReactPasswordStrength-strength-bar {
+      left: 20px;
+      width: calc(100% - 42px);
+    }
+    .confirm-pass {
+      color: $password-evaluator-color;
+      font-size: 14px;
+      text-align: right;
+    }
+    .ReactPasswordStrength-strength-desc {
+      width: 30%;
+      padding: 0;
+      right: 12px;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 2;
+      top: 5px;
+    }
+  }
+}

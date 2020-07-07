@@ -1,0 +1,220 @@
+.form-content {
+  button {
+    position: relative;
+    background-image: linear-gradient(to right, $left-gradient-color, $right-gradient-color);
+    transition: box-shadow 0.4s, -webkit-box-shadow 0.4s;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.2rem;
+
+    &.balance-inline {
+      width: 100%;
+    }
+    &.btn-info {
+      .button__back {
+        position: absolute;
+        z-index: 1;
+        top: 1px;
+        right: 1px;
+        bottom: 1px;
+        left: 1px;
+        border-radius: 0.2rem;
+        transition: opacity 0.4s, visibility 0.4s;
+      }
+
+      .button__text {
+        position: relative;
+        z-index: 2;
+        font-size: 0.875rem;
+        line-height: 1.5;
+        color: $white;
+      }
+    }
+    &.balance-below {
+      margin-bottom: 0.5rem;
+    }
+
+    .button__back {
+      background: $black;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    &:hover .button__back {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .table-borderless {
+    margin-bottom: 0;
+    thead {
+      tr {
+        th {
+          font-size: 0.7rem;
+          color: #525e80;
+          text-align: inherit;
+          padding: 0.25rem 0.25rem 0.25rem 0;
+          border-top: none;
+          border-bottom: 1px solid $td-border-bottom;
+
+          &:nth-child(4) {
+            width: 1%;
+          }
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+          padding: 0.25rem 8px 0.25rem 0;
+          text-align: left;
+          vertical-align: middle;
+          border-color: $td-border-bottom;
+          color: #afb9ca;
+          a {
+            color: $text-color;
+            text-decoration: none;
+            background-color: transparent;
+          }
+
+          &:last-child {
+            padding-right: 0;
+            border-top: none;
+          }
+
+          .balance-inline-form {
+            display: flex;
+            flex-direction: row;
+
+            .form-group {
+              width: 100%;
+              margin-bottom: 0.25rem;
+
+              label {
+                display: inline-block;
+                color: $th-text;
+                font-size: 0.7rem;
+                margin-bottom: 0.25rem;
+              }
+
+              input {
+                display: block;
+                width: 100%;
+                background-color: $input-background;
+                border: 1px solid $input-border;
+                color: $text-color;
+                padding: 0.25rem 0.5rem;
+                font-size: 0.875rem;
+                line-height: 1.5;
+                border-radius: 0.2rem;
+
+                &:focus {
+                  outline: 0;
+                  box-shadow: none;
+                }
+              }
+            }
+
+            & > span {
+              width: 18px;
+              display: block;
+              text-align: center;
+              margin-top: 31px;
+              padding: 0 0.25rem;
+              font-size: 0.7rem;
+            }
+          }
+        }
+        &.balance-form {
+          td {
+            border-top: none;
+            border-bottom: 1px solid $td-border-bottom;
+
+            &:first-child {
+              width: 20%;
+              padding-left: 0;
+              .form-group {
+                margin-bottom: 0;
+
+                label {
+                  color: $th-text;
+                  font-size: 0.7rem;
+                  margin-bottom: 0.25rem;
+                }
+
+                input {
+                  display: block;
+                  padding: 0.25rem 0.5rem;
+                  font-size: 0.875rem;
+                  line-height: 1.5;
+                  border-radius: 0.2rem;
+                  background-color: $input-background;
+                  border: 1px solid $input-border;
+                  color: $text-color;
+
+                  &:focus {
+                    outline: 0;
+                    box-shadow: none;
+                  }
+                }
+              }
+            }
+
+            &:last-child {
+              padding-right: 0;
+            }
+          }
+          &.hidden {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal-container .modal-content {
+  .balance-approval {
+    padding: 0.5rem 2rem 0;
+
+    .button-group {
+      margin-top: 1.5rem;
+    }
+
+    .transaction-card {
+      margin: 1rem auto;
+      border: 1px solid $th-text;
+      color: $th-text;
+      border-radius: 4px;
+
+      > :nth-child(n) {
+        padding: 1rem 0;
+      }
+
+      .card-row {
+        padding: 0.5rem 1rem;
+        line-height: 1rem;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .transaction-card-total {
+        border-top: 1px solid $th-text;
+      }
+    }
+
+    .info-notice {
+      color: $th-text;
+    }
+
+    .alert-notice {
+      padding-top: 0.5rem;
+      color: $td-lost-color;
+    }
+  }
+}

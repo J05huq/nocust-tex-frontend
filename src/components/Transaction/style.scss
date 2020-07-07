@@ -1,0 +1,223 @@
+.transaction-container {
+  flex: 1;
+  padding: 0 8px;
+  height: 100%;
+  .transaction-table-container {
+    height: 100%;
+    padding-top: 5px;
+    table {
+      margin-bottom: 0;
+      &.table-striped {
+        tbody {
+          tr:nth-of-type(odd) {
+            background-color: $tr-background-color;
+          }
+        }
+      }
+      thead {
+        tr {
+          display: flex;
+          justify-content: space-between;
+          th {
+            padding: 8px;
+            border: none;
+            font-size: 13px;
+            font-weight: normal;
+            color: #afb9ca;
+            &:hover {
+              cursor: pointer;
+            }
+            width: 40px;
+            &:nth-child(1) {
+              width: 140px;
+            }
+            &:nth-child(2) {
+              width: 60px;
+            }
+            &:nth-child(3) {
+              width: 80px;
+            }
+            &:nth-child(4) {
+              width: 80px;
+            }
+            &:nth-child(5) {
+              width: 105px;
+            }
+            &:nth-child(6) {
+              width: 140px;
+            }
+
+            &:nth-child(7) {
+              width: 120px;
+            }
+          }
+        }
+      }
+      tbody {
+        tr {
+          display: flex;
+          justify-content: space-between;
+          border-radius: 50px;
+          &.buy {
+            td {
+              &:nth-child(2),
+              &:nth-child(5) {
+                color: #02a177;
+              }
+            }
+          }
+
+          &.sell {
+            td {
+              &:nth-child(2),
+              &:nth-child(5) {
+                color: #b1363f;
+              }
+            }
+          }
+          &:hover {
+            cursor: text;
+          }
+          td {
+            padding: 8px;
+            border: none;
+            font-size: 11px;
+            text-transform: capitalize;
+            width: 40px;
+            &:nth-child(1) {
+              width: 140px;
+            }
+            &:nth-child(2) {
+              width: 60px;
+            }
+            &:nth-child(3) {
+              width: 80px;
+            }
+            &:nth-child(4) {
+              width: 80px;
+            }
+
+            &:nth-child(5) {
+              width: 105px;
+            }
+            &:nth-child(6) {
+              width: 140px;
+            }
+
+            &:nth-child(7) {
+              width: 120px;
+            }
+
+            &:nth-child(3),
+            &:nth-child(4) {
+              text-transform: none;
+            }
+
+            &:last-child {
+              &:hover {
+                cursor: pointer;
+              }
+            }
+
+            &.won {
+              color: $td-won-color;
+            }
+
+            &.lost {
+              color: $td-lost-color;
+            }
+          }
+          .dropdown {
+            text-align: center;
+            & > button {
+              padding: 0;
+              font-size: 13px;
+              background-color: transparent;
+              border: none;
+              &:focus {
+                box-shadow: none;
+              }
+            }
+            .dropdown-menu {
+              background-color: $block-background;
+              box-shadow: 0 6px 50px rgba(0, 0, 0, 0.5);
+              button {
+                color: $white;
+                font-size: 13px;
+                &:hover {
+                  cursor: pointer;
+                  background-color: rgba(0, 0, 0, 0.2);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .no-matching-text {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      i {
+        font-size: 30px;
+        margin-bottom: 15px;
+      }
+
+      span {
+        font-size: 13px;
+      }
+    }
+
+    .closed-tbale {
+      td,
+      th {
+        &:nth-child(1) {
+          width: 140px;
+        }
+
+        &:nth-child(2) {
+          width: 60px;
+        }
+
+        &:nth-child(3) {
+          width: 80px;
+        }
+
+        &:nth-child(4) {
+          width: 80px;
+        }
+
+        &:nth-child(5) {
+          width: 105px;
+        }
+        &:nth-child(6) {
+          width: 140px;
+        }
+
+        &:nth-child(7) {
+          width: 100px;
+        }
+      }
+    }
+  }
+}
+
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 150ms ease-in-out;
+}

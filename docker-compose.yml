@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  tex-prod:
+    container_name: tex-prod
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '3035:80'

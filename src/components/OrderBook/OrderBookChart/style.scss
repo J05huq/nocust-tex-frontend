@@ -1,0 +1,23 @@
+.orderBookScroll {
+  tbody {
+    tr {
+      padding: 0 10px;
+      cursor: pointer;
+      height: auto !important;
+      td {
+        padding: 5px 0 !important;
+      }
+    }
+  }
+
+  .order-diff-span {
+    color: #adbbcd;
+  }
+}
+
+.order-diff-tr {
+  padding: 10px 0;
+  text-align: center;
+  background: #201b43;
+  font-size: 13px;
+}
